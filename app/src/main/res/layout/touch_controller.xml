@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom"
+    android:padding="@dimen/button_size"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/touch_controller">
+
+    <Button android:id="@+id/gamepad_up"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/gamepad_left"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"/>
+
+    <Button android:id="@+id/gamepad_down"
+        android:layout_below="@+id/gamepad_left"
+        android:layout_toRightOf="@+id/gamepad_left"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size" />
+
+    <Button android:id="@+id/gamepad_left"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gamepad_up"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size" />
+
+    <Button android:id="@+id/gamepad_right"
+        android:layout_toRightOf="@+id/gamepad_up"
+        android:layout_below="@+id/gamepad_up"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size" />
+
+    <Button
+        android:id="@+id/gamepad_jump"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_alignTop="@+id/gamepad_left"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
